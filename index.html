@@ -4,8 +4,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Welcome to my portfolio page!</h1>
+    <header class="header">
+        <div class="logo">
+            Shibaura<br>&emsp;Student
+        </div>
+        
+        <nav class="main-nav">
+            <img src="img/menu.svg" class="mobile-menu-trigger" tabindex="0" alt="">
+            <ul>
+                <li><a href="#main">Main</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#quote">Quote</a></li>
+            </ul>
+        </nav>
+        <span class="mobile-menu-untrigger"></span>
+    </header>
+    <main>
+        <section id="main">
+            <div class="section-content">
+                <div class="break"></div>
+                <h1>Welcome to my portfolio page!</h1>
+                <p class="special-desc">I'm just an exchange student, <br>who tries his best, <br>in everything he does.<br><br>
+                Please, take a look at my <a href="#gallery">nice photos</a> below.</p>
+            </div>
+        </section>
+        <section id="gallery" class="gallery-section">
+            <div class="gallery-section-border"></div>
+            <div class="section-content">
+                <h2>Gallery</h2>
+                <p class="section-desc">Just a few photos to enlighten your day.</p>
+                <p class="section-desc">(click on a thumbnail to see bigger photo)</p>
+                <div class="gallery">
+                    <div>
+                        <img class="gallery-thumb" src="img/gallery-1_m.jpg" tabindex="0" alt="">
+                        <div class="gallery-full">
+                            <img src="img/gallery-1.jpg" loading="lazy" alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <img class="gallery-thumb" src="img/gallery-2_m.jpg" tabindex="0" alt="">
+                        <div class="gallery-full">
+                            <img src="img/gallery-2.jpg" loading="lazy" alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <img class="gallery-thumb" src="img/gallery-3_m.jpg" tabindex="0" alt="">
+                        <div class="gallery-full">
+                            <img src="img/gallery-3.jpg" loading="lazy" alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <img class="gallery-thumb" src="img/gallery-4_m.jpg" tabindex="0" alt="">
+                        <div class="gallery-full">
+                            <img src="img/gallery-4.jpg" loading="lazy" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-section-border"></div>
+        </section>
+        <section id="quote" class="quote-section">
+            <div class="section-content">
+                <h2>Quote</h2>
+                <blockquote>
+                    <p>„Today is Always the Most Enjoyable Day”</p>
+                    <cite>„Yotsuba&!” 🍀</cite>
+                </blockquote>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-content">
+            <p>This portfolio-like page was created in May 2024 for a student mid-term project at Shibaura Institute of Technology.</p><br>
+            <p>Techshiba-kun (テクしばくん) is a mascot owned by Shibaura Institute of Technology.</p><br>
+            <p>Have a good day!</p>
+        </div>
+        <div class="subfooter">
+            <div class="techshiba">
+                <img class="shiba-body" src="img/shiba-body.svg" alt="">
+                <img class="shiba-hand" src="img/shiba-hand.svg" alt="">
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
